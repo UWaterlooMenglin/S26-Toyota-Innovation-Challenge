@@ -8,15 +8,15 @@ The Python side has three jobs:
 
 ## Files
 
-- `messages.py` contains dataclasses for the shared message format.
-- `client.py` runs beside a robot and forwards messages between TCP and serial.
-- `central-arbiter.py` runs on the operator computer and coordinates connected robots.
-- `gui.py` is the visual dashboard and command panel.
-- `requirements.txt` lists the packages used by the Python tools.
+- [messages.py](./messages.py) contains dataclasses for the shared message format.
+- [client.py](./client.py) runs beside a robot and forwards messages between TCP and serial.
+- [central-arbiter](./central-arbiter.py)py` runs on the operator computer and coordinates connected robots.
+- [gui.py](./gui.py) is the visual dashboard and command panel.
+- [requirements.txt](./requirements.txt) lists the packages used by the Python tools.
 
 ## `client.py`: Robot Laptop Bridge
 
-`client.py` is the connector between the PRIZM robot and the central arbiter.
+[client.py](./client.py) is the connector between the PRIZM robot and the central arbiter.
 
 Configuration comes from the `.env` file:
 
@@ -47,7 +47,7 @@ Pause, resume, and stop are encoded as `P`, `R`, and `S` on serial. This makes u
 
 ## `central-arbiter.py`: Fleet Server
 
-`central-arbiter.py` owns the connected-client table and is the only process that talks directly to all robot laptops.
+[central-arbiter.py](./central-arbiter.py) owns the connected-client table and is the only process that talks directly to all robot laptops.
 
 Key state:
 
@@ -104,7 +104,7 @@ This is intentionally simple. A stronger solution might add dynamic reservations
 
 ## `gui.py`: Operator Interface
 
-`TelemetryGUI` owns the dashboard window. It receives updates through `update_robot`, which pushes telemetry into a thread-safe queue. The Tkinter event loop periodically drains that queue in `_process_queue`.
+[gui.py](./gui.py): `TelemetryGUI` owns the dashboard window. It receives updates through `update_robot`, which pushes telemetry into a thread-safe queue. The Tkinter event loop periodically drains that queue in `_process_queue`.
 
 The GUI has four major responsibilities:
 

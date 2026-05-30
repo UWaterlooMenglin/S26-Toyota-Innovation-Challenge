@@ -2,13 +2,13 @@
 
 This folder contains three Arduino sketches for PRIZM-based robot testing.
 
-- `testing-bot-controls.ino` is a minimal manual-control sketch.
-- `telemetry_and_communicate_to_aribiter.ino` is the full telemetry and waypoint sketch used with the Python arbiter.
-- `wireless-bot-controls.ino` is the the full telemetry and waypoint sketch that can be used wirelessly with the Python arbiter when using a Robot with an ESP32 attached.
+- [testing-bot-controls.ino](./testing-bot-controls/testing-bot-controls.ino) is a minimal manual-control sketch.
+- [telemetry_and_communicate_to_aribiter.ino](./telemetry_and_communicate_to_aribiter/telemetry_and_communicate_to_aribiter.ino) is the full telemetry and waypoint sketch used with the Python arbiter.
+- [wireless-bot-controls.ino](./wireless-bot-controls/wireless-bot-controls.ino) is the the full telemetry and waypoint sketch that can be used wirelessly with the Python arbiter when using a Robot with an ESP32 attached.
 
 ## Simple Manual-Control Sketch
 
-`testing-bot-controls.ino` is useful before running the full fleet stack. It checks that the motors, serial connection, and gripper servo are wired correctly.
+[testing-bot-controls.ino](./testing-bot-controls/testing-bot-controls.ino) is useful before running the full fleet stack. It checks that the motors, serial connection, and gripper servo are wired correctly.
 
 Serial commands:
 
@@ -33,7 +33,7 @@ If the robot moves backward when you expect forward motion, adjust the signs in 
 
 ## Full Telemetry And Waypoint Sketch
 
-The full sketch is designed to communicate with `client.py` over serial at `115200` baud.
+The full sketch is designed to communicate with [client.py](../python_scripts/client.py) over serial at `115200` baud.
 
 It does five jobs in its main loop:
 
