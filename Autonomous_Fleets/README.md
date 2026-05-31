@@ -19,7 +19,7 @@ Students are invited to build autonomy, coordination, and fleet-management featu
 
 Teams are encouraged to take the project in any direction. These milestones are not requirements or a scoring checklist; they are meant to give less experienced teams a practical path from "the robot moves" to "we built a fleet behavior." Advanced teams can skip, combine, or replace them with their own plan.
 
-<img src="/assets/fleet-rr.png" width="50%">
+<img src="../assets/fleet-rr.png" width="50%">
 
 ### Milestone 1: Make One Robot Reliable
 

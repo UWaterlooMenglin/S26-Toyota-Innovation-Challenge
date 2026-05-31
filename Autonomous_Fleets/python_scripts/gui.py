@@ -179,6 +179,7 @@ class TelemetryGUI:
         ttk.Button(controls_frame, text="Send Straight Test", command=self._send_straight_test_path).pack(fill=tk.X, pady=2)
         ttk.Button(controls_frame, text="Send 180 Turn Test", command=self._send_turnaround_test_path).pack(fill=tk.X, pady=2)
         ttk.Button(controls_frame, text="Send L Test Path", command=self._send_test_path).pack(fill=tk.X, pady=2)
+        ttk.Button(controls_frame, text="test1", command=self._send_test_path).pack(fill=tk.X, pady=2)
 
         coordination_frame = ttk.LabelFrame(left_panel, text="Grid Coordination")
         coordination_frame.pack(fill=tk.X, expand=False, padx=(0, 8), pady=(8, 0))
